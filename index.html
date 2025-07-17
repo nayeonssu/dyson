@@ -4,8 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReDesign - 다이슨</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/DB.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="top">
+            <a href="">제품등록</a>
+            <a href="">주문조회</a>
+            <a href="">기업고객전용</a>
+            <a href="">매장찾기</a>
+            <a href="">고객지원</a>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <h1><img src="#" alt=""></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">제품/악세서리</a><!-- 카테고리 -->
+                            <div class="lnb">
+                                <div class="lnb-menu">
+                                    <div class="lnb-category">
+                                        <h3>청소기</h3>
+                                        <div class="vacuum">
+                                            <a href="#">물청소기</a>
+                                            <a href="#">진공 + 물청소기</a>
+                                            <a href="#">진공청소기</a>
+                                            <a href="#">로봇청소기</a>
+                                            <a href="#">모두보기</a>
+                                            <a href="#">펫 사이언스</a>
+                                        </div>
+                                    </div>
+                                    <div class="lnb-category">
+                                        <h3>헤어케어</h3>
+                                        <div class="hair">
+                                            <a href="#">스타일러</a>
+                                            <a href="#">드라이어</a>
+                                            <a href="#">스트레이트너</a>
+                                            <a href="#">헤어 에센셜 케어</a>
+                                            <a href="#">모두보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lnb-category">
+                                        <h3>공기청정기&선풍기</h3>
+                                        <div class="fan">
+                                            <a href="#">공기청정기</a>
+                                            <a href="#">가습 공기청정기</a>
+                                            <a href="#">모두보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lnb-category">
+                                        <h3>헤드폰</h3>
+                                        <div class="headphones">
+                                            <a href="#">헤드폰</a>
+                                            <a href="#">노이즈 캔슬링 헤드폰</a>
+                                            <a href="#">모두보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lnb-category">
+                                        <h3>조명</h3>
+                                        <div class="lighting">
+                                            <a href="#">조명</a>
+                                            <a href="#">다이슨 솔라사이클 모프</a>
+                                            <a href="#">모두보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lnb-category">
+                                        <h3>액세서리&용품</h3>
+                                        <div class="supplies">
+                                            <a href="#">무선 청소기</a>
+                                            <a href="#">헤어케어</a>
+                                            <a href="#">공기청정기</a>
+                                            <a href="#">헤드폰</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lnb-more">
+                                    <h3>더 알아보기</h3>
+                                    <a href="">나에게 맞는제품 선택하기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">혜택/이벤트</a>
+                            <div class="inb">
+                                <div class="lnb-category">
+                                    <h3>이벤트</h3>
+                                    <div class="event">
+                                        <a href="#">NEW 에어랩 2x 런칭 이벤트</a>
+                                        <a href="#">보상판매 이벤트</a>
+                                        <a href="#">대학생 혜택 프로그램</a>
+                                        <a href="#">헤어케어</a>
+                                        <a href="#">청소기</a>
+                                        <a href="#">공기청정기&헤드폰</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">스토리</a>
+                        </li>
+                        <li>
+                            <a href="#">다이슨 Live</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <img src="#" alt="찾을제품 작성">
+                    <input type="text" id="search_name" name="search">
+                </div>
+                <a href="#" class="user"><img src="#" alt="유저로그인"></a>
+                <a href="#" class="cart"><img src="#" alt="장바구니"></a>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer>
+        <div class="top">
+            <div class="foot-group">
+                <h3>제품</h3>
+                <div class="foot-link">
+                    <a href="#">청소기</a>
+                    <a href="#">헤어케어</a>
+                    <a href="#">공기청정기 및 선풍기</a>
+                    <a href="#">헤드폰</a>
+                    <a href="#">조명</a>
+                    <a href="#">엑세서리 및 부품</a>
+                    <a href="#">스페셜딜</a>
+                    <a href="#">Dyson Live</a>
+                </div>
+            </div>
+            <div class="foot-group">
+                <h3>기업 고객 전용</h3>
+                <div class="foot-link">
+                    <a href="#">전체보기</a>
+                    <a href="#">핸드 드라이어</a>
+                    <a href="#">공기청정기</a>
+                    <a href="#">무선청소기</a>
+                    <a href="#">조명</a>
+                </div>
+            </div>
+            <div class="foot-group">
+                <h3>고객지원</h3>
+                <div class="foot-link">
+                    <a href="#">문의하기</a>
+                    <a href="#">제품 지원</a>
+                    <a href="#">제품 등록</a>
+                    <a href="#">배송정보</a>
+                    <a href="#">다이슨 위조 기술 판별 안내</a>
+                    <a href="#">엑세서리 및 부품</a>
+                    <a href="#">스페셜딜</a>
+                    <a href="#">Dyson Live</a>
+                </div>
+            </div>
+            <div class="foot-group">
+                <h3>기업정보</h3>
+                <div class="foot-link">
+                    <a href="#">다이슨 스토어</a>
+                    <a href="#">뉴스룸</a>
+                    <a href="#">Press</a>
+                    <a href="#">채용</a>
+                    <a href="#">다이슨 지속가능성</a>
+                    <a href="#">James Dyson 재단</a>
+                    <a href="#">AM04/5 리콜</a>
+                </div>
+            </div>
+        </div>
+        <div class="mide">
+            <div class="legal">
+                <a href="#">이용약관</a>
+                <a href="#">판매약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">다이슨 글로벌 개인정보처리방침</a>
+                <a href="#">쿠키 취급 방침</a>
+                <a href="#">개인정보 처리방침 계정안내</a>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </footer>
 </body>
 </html>
