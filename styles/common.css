@@ -1,0 +1,84 @@
+/* index, 모든 sub페이지에 적용할 공통 header,footer common.css */
+/* ---------------------------------------반응형 작업 */
+header, footer {background:yellow; height:100vh;}
+@media screen and (max-width:1200px){
+    header, footer {background:pink}
+}
+@media screen and (max-width:1024px){
+    header, footer {background:coral}
+}
+@media screen and (max-width:768px){
+    header, footer {background:skyblue}
+}
+/* ---------------------------------------header s */
+header {}
+header .top {}
+header .top a {}
+header .bottom {}
+/* -------------------------header 왼쪽 */
+header .bottom .left {}
+header .bottom .left #logo {}
+header .bottom .left #logo img {}
+/* header .bottom .left #mobileToggle {}
+header .bottom .left #mobileToggle img {} */
+header .bottom .left #webNav {}
+header .bottom .left #webNav .gnb {}
+header .bottom .left #webNav .gnb li {}
+header .bottom .left #webNav .gnb li a {}
+header .bottom .left #webNav .gnb li .inb_bg {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 {}
+/* lnb 카테고리 메뉴 */
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 > li {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 > li > a {}
+/* header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 li button {} */
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 li .inb_depth2 {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 li .inb_depth2 li {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 li .inb_depth2 li a {}
+
+/* inb 더 알아보기 */
+header .bottom .left #webNav .gnb li .inb_bg .inb_more {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_more a {}
+/* header .bottom .left #webNav .gnb li .inb_bg .inb_more button {} */
+header .bottom .left #webNav .gnb li .inb_bg .inb_more .inb_depth2 {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_more .inb_depth2 li {}
+header .bottom .left #webNav .gnb li .inb_bg .inb_more .inb_depth2 li a {}
+
+/* -------------------------header 오른쪽 */
+header .bottom .right {}
+header .bottom .right .search {}
+header .bottom .right .search img {}
+header .bottom .right .search #search_name {}
+header .bottom .right a {}
+/* ---------------------------------------header e */
+
+
+/* ---------------------------------------footer s */
+footer {}
+footer .top {}
+footer .top .foot-group {}
+footer .top .foot-group .foot_titie {}
+footer .top .foot-group .foot_titie span {}
+footer .top .foot-group .foot_titie button {}
+footer .top .foot-group .foot_link {}
+footer .top .foot-group .foot_link li {}
+footer .top .foot-group .foot_link li a {}
+footer .mide {}
+footer .mide #legal {}
+footer .mide #legal a {}
+footer .mide #lang #lang_btn {}
+footer .mide #lang #lang_menu {}
+footer .mide #lang #lang_menu #contry_lang {}
+footer .mide #lang #lang_menu #contry_lang li {}
+footer .mide #lang #lang_menu #contry_lang li a {}
+footer .bottom {}
+footer .bottom #adress {}
+footer .bottom #adress p {}
+footer .bottom #sns {}
+footer .bottom #sns a {}
+footer .bottom #sns a img {}
+footer .bottom #senter {}
+footer .bottom #senter #call {}
+footer .bottom #senter #call p {}
+footer .bottom #senter #operation-time {}
+footer .bottom #senter #operation-time p {}
+/* ---------------------------------------footer e */
