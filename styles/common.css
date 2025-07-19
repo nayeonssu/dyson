@@ -1,33 +1,32 @@
 /* index, 모든 sub페이지에 적용할 공통 header,footer common.css */
-/* ---------------------------------------반응형 작업 */
-header, footer {background:yellow; height:100vh;}
-@media screen and (max-width:1200px){
-    header, footer {background:pink}
-}
-@media screen and (max-width:1024px){
-    header, footer {background:coral}
-}
-@media screen and (max-width:768px){
-    header, footer {background:skyblue}
-}
 /* ---------------------------------------header s */
-header {}
-header .top {}
-header .top a {}
-header .bottom {}
+header {width:100%; height:100px; background:#000; padding:0 130px;}
+header .top {height:40px; display:flex; align-items:center; justify-content:flex-end;}
+header .top .menu {}
+header .top .menu a {color:#DBDBDB; margin-right:25px; font-size:0.875rem;}
+header .top .menu a:last-of-type {margin-right:0;}
+header .bottom {
+    display:flex; align-items:center; justify-content:space-between;
+    height:60px; 
+}
 /* -------------------------header 왼쪽 */
-header .bottom .left {}
-header .bottom .left #logo {}
+header .bottom .left {display:flex; align-items:center;}
+header .bottom .left #logo {margin-right:35px;}
 header .bottom .left #logo img {}
-/* header .bottom .left #mobileToggle {}
-header .bottom .left #mobileToggle img {} */
+header .bottom .left #mobileToggle {display:none;}
+header .bottom .left #mobileToggle img {}
 header .bottom .left #webNav {}
-header .bottom .left #webNav .gnb {}
+header .bottom .left #webNav .gnb {display:flex; flex-flow:row nowrap;}
 header .bottom .left #webNav .gnb li {}
-header .bottom .left #webNav .gnb li a {}
-header .bottom .left #webNav .gnb li .inb_bg {}
-header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 {}
+header .bottom .left #webNav .gnb li a {
+    display:inline-block;
+    color:#fff; padding:0 15px;
+    line-height:60px; height:60px;
+}
+header .bottom .left #webNav .gnb li a:hover {background:#222;}
+header .bottom .left #webNav .gnb li .inb_bg {display:none;}
 /* lnb 카테고리 메뉴 */
+header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 {}
 header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 > li {}
 header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 > li > a {}
 /* header .bottom .left #webNav .gnb li .inb_bg .inb_depth1 li button {} */
@@ -44,41 +43,73 @@ header .bottom .left #webNav .gnb li .inb_bg .inb_more .inb_depth2 li {}
 header .bottom .left #webNav .gnb li .inb_bg .inb_more .inb_depth2 li a {}
 
 /* -------------------------header 오른쪽 */
-header .bottom .right {}
-header .bottom .right .search {}
-header .bottom .right .search img {}
-header .bottom .right .search #search_name {}
+header .bottom .right {display:flex; gap:20px; align-items:center;}
+header .bottom .right .search {position: relative;}
+header .bottom .right .search img {position:absolute; left:6px; top:4px;}
+header .bottom .right .search #search_name {
+    padding:13px 15px 13px 40px;
+    border-radius:50px; font-size:0.75rem;
+    color:#fff; background:#2C2C2C;
+    width:171px; height:38px;
+}
 header .bottom .right a {}
 /* ---------------------------------------header e */
 
 
 /* ---------------------------------------footer s */
-footer {}
-footer .top {}
-footer .top .foot-group {}
-footer .top .foot-group .foot_titie {}
-footer .top .foot-group .foot_titie span {}
-footer .top .foot-group .foot_titie button {}
-footer .top .foot-group .foot_link {}
-footer .top .foot-group .foot_link li {}
-footer .top .foot-group .foot_link li a {}
-footer .mide {}
-footer .mide #legal {}
-footer .mide #legal a {}
-footer .mide #lang #lang_btn {}
-footer .mide #lang #lang_menu {}
-footer .mide #lang #lang_menu #contry_lang {}
-footer .mide #lang #lang_menu #contry_lang li {}
-footer .mide #lang #lang_menu #contry_lang li a {}
-footer .bottom {}
-footer .bottom #adress {}
-footer .bottom #adress p {}
-footer .bottom #sns {}
-footer .bottom #sns a {}
-footer .bottom #sns a img {}
+footer {background:#000;}
+footer .top {
+    display:flex; justify-content:space-between;
+    padding:50px 280px;
+}
+footer .top .foot_group {}
+footer .top .foot_group > .foot_title {margin-bottom:23px;}
+footer .top .foot_group > .foot_title span {font-weight:600; color:#D8D8D8;}
+footer .top .foot_group > .foot_title button {display:none;}
+footer .top .foot_group .foot_link {display:flex; flex-flow:column nowrap; gap:16px;}
+footer .top .foot_group .foot_link li {}
+footer .top .foot_group .foot_link li a {font-size:0.875rem; color:#777777;}
+/* ----------------------------------------------- */
+footer .mide {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 130px; border-top: 1px solid #4D4D4D; border-bottom: 1px solid #4D4D4D; 
+}
+/* 기업정보 */
+footer .mide #legal {position:relative;}
+footer .mide #legal a {margin-right:30px; color:#D8D8D8;}
+footer .mide #legal a:last-of-type {margin-right:0;}
+/* 언어변경 */
+footer .mide #lang {display:flex; align-items:center;}
+footer .mide #lang select {
+    width:146px;
+    background:url(../images/icon_lang_more.png) #fff no-repeat 85% center;
+}
+footer .mide #lang .more_lang {
+    display:flex; align-items:center;
+    border:1px solid #777777; padding:10px 20px; border-radius:5px;
+    background-color: transparent; color:#777;
+    outline:none; height:44px;
+}
+footer .mide #lang .more_lang option {font-size:0.875rem;}
+/* ----------------------------------------------- */
+footer .bottom {padding:40px 130px; display:flex; justify-content:space-between; align-items:center;}
+footer .bottom .left {display:flex; flex-flow:column nowrap;}
+footer .bottom .left #adress {}
+footer .bottom .left #adress p {
+    line-height:1.7; font-weight:300; font-size:0.75rem;
+    margin-bottom:30px; color:#777;
+}
+footer .bottom .left #sns {display:flex; gap:13px;}
+footer .bottom .left #sns a {}
+footer .bottom .left #sns a img {}
 footer .bottom #senter {}
-footer .bottom #senter #call {}
-footer .bottom #senter #call p {}
+footer .bottom #senter #call {margin-bottom:20px;}
+footer .bottom #senter #call p {margin-bottom:5px; color:#777777;}
+footer .bottom #senter #call p:nth-child(2) {font-size:1.875rem;}
+footer .bottom #senter #call p:nth-child(3) {font-size:1.25rem;}
+footer .bottom #senter #call p:last-of-type {margin-bottom:0;}
 footer .bottom #senter #operation-time {}
-footer .bottom #senter #operation-time p {}
+footer .bottom #senter #operation-time p {color:#777777;}
+footer .bottom #senter #operation-time p:nth-child(1) {margin-bottom:5px;}
+footer .bottom #senter #operation-time p:nth-child(2) {line-height:1.5; font-size:0.75rem;}
 /* ---------------------------------------footer e */

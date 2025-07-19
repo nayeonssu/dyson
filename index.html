@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReDesign - 다이슨</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
     <link href="./styles/common.css" rel="stylesheet"><!-- header, footer -->
     <link href="./styles/responsive.css" rel="stylesheet"><!-- header, footer 반응형 -->
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/swiper.js" defer></script>
     <script src="./scripts/DB.js" defer></script>
 </head>
 <body>
     <header>
         <div class="top">
-            <a href="">제품등록</a>
-            <a href="">주문조회</a>
-            <a href="">기업고객전용</a>
-            <a href="">매장찾기</a>
-            <a href="">고객지원</a>
+            <div class="menu">
+                <a href="#">제품등록</a>
+                <a href="#">주문조회</a>
+                <a href="#">기업고객전용</a>
+                <a href="#">매장찾기</a>
+                <a href="#">고객지원</a>
+            </div>
         </div>
         <div class="bottom">
             <div class="left">
                 <!-- 로고 -->
-                <h1 id="logo"><img src="./images/icon_logo.png" alt="dyson"></h1>
+                <h1 id="logo"><a href="#"><img src="./images/icon_logo.png" alt="dyson"></a></h1>
                 <!-- 모바일상태 -->
                 <button type="button" id="mobileToggle"><img src="./images/icon_toggle.png" alt=""></button>
                 <!-- 웹,테블릿 -->
                 <nav id="webNav">
                     <ul class="gnb">
                         <li><a href="#">제품/악세서리</a>
-                            <div class="lnb_bg">
+                            <!-- <div class="lnb_bg">
                                 <ul class="lnb_depth1">
                                     <li>
                                         <a href="#">청소기</a>
@@ -100,10 +110,10 @@
                                         <li><a href="#">나에게 맞는 제품 선택하기</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </li>
                         <li><a href="#">혜택/이벤트</a>
-                            <div class="lnb_bg">
+                            <!-- <div class="lnb_bg">
                                 <ul class="lnb_depth1">
                                     <li>
                                         <a href="#">이벤트</a>
@@ -118,17 +128,17 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </li>
                         <li><a href="#">스토리</a>
-                            <div class="lnb_bg">
+                            <!-- <div class="lnb_bg">
                                 <a href="#">스토리 보러가기</a>
-                            </div>
+                            </div> -->
                         </li>
                         <li><a href="#">다이슨 Live</a>
-                            <div class="lnb_bg">
+                            <!-- <div class="lnb_bg">
                                 <a href="#">Live 보러가기</a>
-                            </div>
+                            </div> -->
                         </li>
                     </ul>
                 </nav>
@@ -143,11 +153,41 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- 1행 -->
+        <section id="ad">
+            <div class="swiper" id="ad_swiper">
+                <!--필수-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ad1">slide1</div>
+                    <div class="swiper-slide ad2">slide2</div>
+                    <div class="swiper-slide ad3">slide3</div>
+                </div>
+                <!--필요 시 사용(선택)-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <!-- 2행 -->
+        <section id="category"></section>
+        <!-- 3행 -->
+        <section id="best"></section>
+        <!-- 4행 -->
+        <section id="video"></section>
+        <!-- 5행 -->
+        <section id="skill"></section>
+        <!-- 6행 -->
+        <section id="special_deal"></section>
+        <!-- 7행 -->
+        <section id="event"></section>
+        <!-- 8행 -->
+        <section id="story"></section>
+    </main>
     <footer>
         <div class="top">
             <div class="foot_group">
-                <h2 class="foot_title">
+                <h2  class="foot_title">
                     <!-- 웹,테블릿 -->
                     <span>제품</span>
                     <!-- 모바일 -->
@@ -164,54 +204,51 @@
                     <li><a href="#">Dyson Live</a></li>
                 </ul>
             </div>
-            <div class="foot-group">
-                <h2 class="foot-title">
+            <div class="foot_group">
+                <h2  class="foot_title">
                     <!-- 웹,테블릿 -->
                     <span>기업 고객 전용</span>
                     <!-- 모바일 -->
                     <button type="button" name="more" value="more">기업 고객 전용</button>
                 </h2>
-                <ul class="foot-link">
+                <ul class="foot_link">
                     <li><a href="#">전체보기</a></li>
                     <li><a href="#">핸드 드라이어</a></li>
                     <li><a href="#">공기청정기</a></li>
                     <li><a href="#">무선청소기</a></li>
+                    <li><a href="#">헤어케어</a></li>
                     <li><a href="#">조명</a></li>
                 </ul>
             </div>
-            <div class="foot-group">
-                <h2 class="foot-title">
+            <div class="foot_group">
+                <h2  class="foot_title">
                     <!-- 웹,테블릿 -->
                     <span>고객지원</span>
                     <!-- 모바일 -->
                     <button type="button" name="more" value="more">고객지원</button>
                 </h2>
-                <ul class="foot-link">
+                <ul class="foot_link">
                     <li><a href="#">문의하기</a></li>
                     <li><a href="#">제품 지원</a></li>
                     <li><a href="#">제품 등록</a></li>
                     <li><a href="#">배송정보</a></li>
                     <li><a href="#">다이슨 위조 기술 판별 안내</a></li>
-                    <li><a href="#">엑세서리 및 부품</a></li>
-                    <li><a href="#">스페셜딜</a></li>
-                    <li><a href="#">Dyson Live</a></li>
                 </ul>
             </div>
-            <div class="foot-group">
-                <h2 class="foot-title">
-                    <!-- 웹,데스크탑 -->
-                    <span>기업정보</span>
+            <div class="foot_group">
+                <h2  class="foot_title">
+                    <!-- 웹,테블릿 -->
+                    <span>기업 정보</span>
                     <!-- 모바일 -->
-                    <button type="button" name="more" value="more">기업정보</button>
+                    <button type="button" name="more" value="more">기업 정보</button>
                 </h2>
-                <ul class="foot-link">
+                <ul class="foot_link">
                     <li><a href="#">다이슨 스토어</a></li>
                     <li><a href="#">뉴스룸</a></li>
-                    <li><a href="#">Press</a></li>
+                    <li><a href="#"> Press</a></li>
                     <li><a href="#">채용</a></li>
                     <li><a href="#">다이슨 지속가능성</a></li>
                     <li><a href="#">James Dyson 재단</a></li>
-                    <li><a href="#">AM04/5 리콜</a></li>
                 </ul>
             </div>
         </div>
@@ -225,7 +262,19 @@
                 <a href="#">개인정보 처리방침 계정안내</a>
             </div>
             <div id="lang">
-                <button type="button" id="lang_btn">ko / 한국어</button>
+                <select name="country_lang" class="more_lang">
+                    <option value="#">ko / 한국어</option>
+                    <option value="#">en / English</option>
+                    <option value="#">ja / 日本語</option>
+                    <option value="#">zh / 中文</option>
+                    <option value="#">fr / Français</option>
+                    <option value="#">es / Español</option>
+                    <option value="#">de / Deutsch</option>
+                </select>
+                <!-- <button type="button" id="lang_btn">
+                    <span>ko / 한국어</span>
+                    <img src="./images/icon_lang_more.png" alt="언어 더보기">
+                </button>
                 <div id="lang_menu">
                     <ul id="contry_lang">
                         <li><a href="#">ko / 한국어</a></li>
@@ -236,18 +285,20 @@
                         <li><a href="#">es / Español</a></li>
                         <li><a href="#">de / Deutsch</a></li>
                     </ul>
-                </div>
+                </div -->>
             </div>
         </div>
         <div class="bottom">
-            <div id="adress">
-                <p>다이슨코리아 유한회사 대표이사: PARK MOONJOO(김문주)<br>주소 : 서울특별시 강남구 테헤란로 142, 아크플레이스 17층 .06236<br>사업자등록번호 : 811-81-00675<br>통신판매번호 : 2017-서울강남-04029 사업자정보확인<br>이메일:help@kr.dyson.com<br>호스팅 제공자 : 아마존웹서비스</p>
-            </div>
-            <div id="sns">
-                <a href="#" id="facebook"><img src="./images/icon_facebook.png" alt="facebook"></a>
-                <a href="#" id="youtube"><img src="./images/icon_youtube.png" alt="youtube"></a>
-                <a href="#" id="instagram"><img src="./images/icon_instagram.png" alt="instagram"></a>
-                <a href="#" id="x"><img src="./images/icon_x.png" alt="x"></a>
+            <div class="left">
+                <div id="adress">
+                    <p>다이슨코리아 유한회사 대표이사: PARK MOONJOO(김문주)<br>주소 : 서울특별시 강남구 테헤란로 142, 아크플레이스 17층 .06236<br>사업자등록번호 : 811-81-00675<br>통신판매번호 : 2017-서울강남-04029 사업자정보확인<br>이메일:help@kr.dyson.com<br>호스팅 제공자 : 아마존웹서비스</p>
+                </div>
+                <div id="sns">
+                    <a href="#" id="facebook"><img src="./images/icon_facebook.png" alt="facebook"></a>
+                    <a href="#" id="youtube"><img src="./images/icon_youtube.png" alt="youtube"></a>
+                    <a href="#" id="instagram"><img src="./images/icon_instagram.png" alt="instagram"></a>
+                    <a href="#" id="x"><img src="./images/icon_x.png" alt="x"></a>
+                </div>
             </div>
             <div id="senter">
                 <div id="call">

@@ -1,0 +1,22 @@
+/* main 작업 */
+main {}
+/* -----------------------------------------------1행 */
+main #ad {background:orange; width:100%; height: 750px;}
+main #ad .swiper {height:100%;}
+main #ad .swiper .ad1 {}
+main #ad .swiper .ad2 {}
+main #ad .swiper .ad3 {}
+/* -----------------------------------------------2행 */
+main #category {background:pink; width:100%; height: 469px;}
+/* -----------------------------------------------3행 */
+main #best {background:skyblue; width:100%; height: 910px;}
+/* -----------------------------------------------4행 */
+main #video {background:yellow; width:100%; height: 880px;}
+/* -----------------------------------------------5행 */
+main #skill {background:burlywood; width:100%; height: 380px;}
+/* -----------------------------------------------6행 */
+main #special_deal {background:seagreen; width:100%; height: 665px;}
+/* -----------------------------------------------7행 */
+main #event {background:grey; width:100%; height: 537px;}
+/* -----------------------------------------------8행 */
+main #story {background:darkslateblue; width:100%; height: 308px;}

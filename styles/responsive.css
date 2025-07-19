@@ -1,12 +1,16 @@
 /* ---------------------------------------반응형 작업 */
-header, footer {background:yellow; height:100vh;}
+header, footer {/* background:yellow; height:100vh; */}
 /* web -> 1920 ~ 1200 */
 /* web -> 1920 ~ 1200 */
-@media screen and (max-width:1024px){
+@media screen and (max-width:1250px){
     /* 태블릿 화면의 최대크기가 1024까지 이 이상일때는 위의 색으로 변한다. */
     header, footer {background:coral}
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     /* 모바일 화면의 최대크기가 768까지 이 이상일때는 위의 색으로 변한다. */
     header, footer {background:skyblue}
+}
+@media screen and (max-width:440px){
+    /* 모바일 화면의 최대크기가 768까지 이 이상일때는 위의 색으로 변한다. */
+    header, footer {background:palevioletred}
 }
