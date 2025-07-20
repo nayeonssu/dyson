@@ -1,19 +1,136 @@
 /* main 작업 */
 main {}
 /* -----------------------------------------------1행 */
-main #ad {background:orange; width:100%; height: 750px;}
-main #ad .swiper {height:100%;}
-main #ad .swiper .ad1 {}
-main #ad .swiper .ad2 {}
-main #ad .swiper .ad3 {}
+main #ad {width:100%; height: 750px;}
+main #ad #ad_swiper {
+    width:100%; height:768px;
+    position: relative;
+}
+main #ad #ad_swiper .swiper-slide {
+    height:100%;
+    display:flex; align-items:center; justify-content:center;
+}
+main #ad #ad_swiper .swiper-slide img:nth-of-type(1) {
+    position:absolute; left:50%; bottom:0;
+    transform: translateX(-50%);
+}
+main #ad #ad_swiper .swiper-slide img:nth-of-type(2) {
+    position:absolute; left:399px; top:50%;
+    transform: translateY(-50%);
+}
+main #ad #ad_swiper .swiper-slide .txt {
+    position:absolute; right:399px; top:50%; transform: translateY(-50%);
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+main #ad #ad_swiper .swiper-slide .txt h2 {font-size:2.563rem; font-weight:600;}
+main #ad #ad_swiper .swiper-slide .txt p {}
+main #ad #ad_swiper .swiper-slide .txt p:nth-of-type(1) {
+    font-size:1.063rem; line-height:1.5;
+    margin:22px 36px; text-align: center;
+}
+main #ad #ad_swiper .swiper-slide .txt p:nth-of-type(2) {
+    width: 123px; padding:13px 24px;
+    font-size:0.875rem; color:#595959;
+    border:1px solid #595959;
+    border-radius:50px;
+}
+
+/* 광고1 영역 */
+main #ad #ad_swiper .ad1 {
+    background:/* url('../images/img_ad_wonyoung.png') center/cover no-repeat, */ linear-gradient(180deg, #EA8C8D, #E2C6C3);
+    background-size: 629px auto, cover;
+}
+/* 광고2 영역 */
+main #ad #ad_swiper .ad2 {
+    background:/* url(../images/img_ad_vacuum.png) center/cover no-repeat, */ #fff;
+    background-size: 629px auto, cover;
+}
+/* 페이지 방향 */
+main #ad #ad_swiper .swiper-button-prev {
+    background:url(../images/icon_ad_left.png);
+    position:absolute; left:0;
+}
+main #ad #ad_swiper .swiper-button-next {
+    background:url(../images/icon_ad_right.png);
+    position:absolute; right:0;
+}
+main #ad #ad_swiper .swiper-button-prev::after,
+main #ad #ad_swiper .swiper-button-next::after {display:none;}
+/* 광고에 올렸을때 */
+main #ad #ad_swiper .swiper-button-prev,
+main #ad #ad_swiper .swiper-button-next {opacity: 0;}
+main #ad #ad_swiper:hover .swiper-button-prev,
+main #ad #ad_swiper:hover .swiper-button-next {opacity: 1;}
+/* 스크롤바 */
+main #ad #ad_swiper .swiper-scrollbar {
+    background:rgba(0, 0, 0, 0.5);
+    width:600px;
+    height: 2px;
+    border-radius: 50px;
+    position:absolute; left:50%; bottom:29px;
+    transform: translateX(-50%);
+}
+main #ad #ad_swiper .swiper-scrollbar-drag {
+    background: #fff; /* 원하는 색상 */
+    border-radius: 10px;
+}
 /* -----------------------------------------------2행 */
-main #category {background:pink; width:100%; height: 469px;}
+main #category {width:100%; padding:80px 280px;}
+main #category h2 {font-size:1.875rem; font-weight:600; margin-bottom:42px;}
+main #category .category-menu {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main #category .category-menu li {}
+main #category .category-menu li img {}
+main #category .category-menu li p {
+    text-align:center; margin-top:23px; line-height:1.5;
+    font-weight:500; font-size:1.125rem;
+}
 /* -----------------------------------------------3행 */
 main #best {background:skyblue; width:100%; height: 910px;}
 /* -----------------------------------------------4행 */
-main #video {background:yellow; width:100%; height: 880px;}
+main #video {
+    background:#202020; width:100%; height: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #video iframe {}
 /* -----------------------------------------------5행 */
-main #skill {background:burlywood; width:100%; height: 380px;}
+main #skill {width:100%;}
+main #skill #skill_swiper {}
+main #skill #skill_swiper .swiper-slide {display:flex;}
+main #skill #skill_swiper .swiper-slide .left {
+    padding:60px 30px 60px 260px;
+    height: 380px;
+    display:flex; align-items:center; justify-content:space-between;
+    width:calc(100% / 2);
+    background:#F3F3F3;
+}
+main #skill #skill_swiper .swiper-slide .left .info {}
+main #skill #skill_swiper .swiper-slide .left .info h3 {font-size:1.688rem; margin-bottom:25px;}
+main #skill #skill_swiper .swiper-slide .left .info p {font-size:1.063rem; line-height:1.7;}
+main #skill #skill_swiper .swiper-slide .left a {}
+main #skill #skill_swiper .swiper-slide .img {
+    height: 380px;
+    width:calc(100% / 2);
+}
+main #skill #skill_swiper .hand .img {
+    background:url(../images/img_skill_hand.jpg) right/cover no-repeat;
+}
+main #skill #skill_swiper .hair .img {
+    background:url(../images/img_skill_hair.jpg) right/cover no-repeat;
+}
+main #skill #skill_swiper .vacuum .img {
+    background:url(../images/img_skill_vacuum.jpg) right/cover no-repeat;
+}
+main #skill #skill_swiper .air .img {
+    background:url(../images/img_skill_air.jpg) right/cover no-repeat;
+}
+main #skill #skill_swiper .lighting .img {
+    background:url(../images/img_skill_lighting.jpg) right/cover no-repeat;
+}
 /* -----------------------------------------------6행 */
 main #special_deal {background:seagreen; width:100%; height: 665px;}
 /* -----------------------------------------------7행 */
