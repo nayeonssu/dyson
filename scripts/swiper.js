@@ -12,6 +12,6 @@ const adSwiper = new Swiper('#ad_swiper', {
 /* 기술 스와이퍼 */
 const skillSwiper = new Swiper('#skill_swiper', {
     loop:true,
-    /* autoplay:{delay:3000}, */
+    autoplay:{delay:4000},
     direction:'horizontal',
 })
